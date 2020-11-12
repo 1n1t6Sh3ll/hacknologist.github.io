@@ -1,0 +1,136 @@
+body{
+	margin: auto 0;
+}
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+.nav{
+	background-color: #7abcff;
+	font-size: 2em;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.nav:hover{
+	  display: inline-block;
+
+}
+
+.main-nav{
+	list-style: none;
+	display: flex;
+	font-size: 1em;
+	margin: 0px;
+}
+.cover{
+	margin-top:15rem;
+	width: 43rem;
+	height: 40rem;
+}
+
+/* for size of text*/
+@media only screen and (max-width: 650px){
+	.main-nav, footer {
+		font-size:0.7em;
+		padding:0px;
+}
+}
+
+
+li{
+	padding:10px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	}
+
+a:hover{
+	color:black;
+	
+}
+li:hover{
+	background-color: orange;
+	size: 3px;
+	padding-bottom: 5px;
+
+}
+
+
+ 
+
+.push {
+	margin-left: auto;
+}
+
+/*COVER !!!!*/
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+.red{
+	background: green;
+	cursor: pointer;
+}
+
+.zone{
+		align-self: center;
+		font-size: 2em;
+}
+
+footer{
+	background-color: #bbb;
+	justify-content: center;
+	color:black;
+	display: flex;
+	font-size:1em;
+	border-width: 10px;
+	font-family: monospace;
+
+}
+.grid-wrapper{
+	margin-top: 15rem;
+	border-top: 30px solid #bbb;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+	grid-gap: 20px;
+	cursor: pointer;
+}
+
+.box > img {
+
+	width: 100%;
+}
+
+.box{
+	padding:30px;
+	margin:40px;
+	background-color: #FFF;
+	border-radius: 30%;
+}
+.box:hover{
+	transform: rotate(-7deg);
+}
+img{
+	width: 3rem;
+	height:18rem;
+}
+.black{
+	background-color: black;
+}
+

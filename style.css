@@ -1,0 +1,154 @@
+body{
+	margin: auto 0;
+	height: 100%;
+	width:100%;
+}
+h1{
+	font-size: 4rem;
+	color: black;
+	text-align: center;
+	margin-top: 3.7rem;
+	margin-bottom: 2px;
+	border:none;
+	background: #7abcff;
+}
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+.nav{
+	background-color: black;
+	font-size: 2em;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.nav:hover{
+	  display: inline-block;
+
+}
+
+.main-nav{
+	list-style: none;
+	display: flex;
+	font-size: 1em;
+	margin: 0px;
+}
+
+/* for size of text*/
+@media only screen and (max-width: 650px){
+	.main-nav {
+		font-size:0.7em;
+		padding:0px;
+}
+}
+
+
+li{
+	padding:10px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	}
+
+a:hover{
+	color:black;
+	
+}
+li:hover{
+	background-color: orange;
+	
+	padding-bottom: 5px;
+
+}
+
+
+ 
+
+.push {
+	margin-left: auto;
+}
+
+/*COVER !!!!*/
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+.red{
+	background: green;
+	cursor: pointer;
+}
+
+.zone{
+		font-size: 2em;
+}
+
+footer{
+	
+	justify-content: center;
+	color:black;
+	display: flex;
+	font-size:1em;
+	border-width: 10px;
+	font-family: monospace;
+
+}
+.grid-wrapper{
+	border-top: 30px solid #7abcff;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	width: 100%;
+	height:120%;
+	grid-gap: 50px;
+	cursor: pointer;
+}
+
+.box > img {
+	width: 100%;
+}
+
+.box{
+
+	padding:40px;
+	margin:40px;
+	background-color: #FFF;
+	border-radius: 30%;
+}
+.box:hover{
+	transform: rotate(-7deg);
+}
+img{
+	width: 3rem;
+	height:18rem;
+}
+.black{
+	background-color: black;
+}
+.cover{
+	width: 30rem;
+}
+
+/*SLide show code*/
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
